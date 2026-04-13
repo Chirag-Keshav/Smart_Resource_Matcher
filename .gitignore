@@ -1,3 +1,8 @@
 # Planning docs
 implementation_plan.md
 task.md
+
+#Env
+.env 
+.env.example
+.env.test

@@ -12,7 +12,7 @@ Smart Resource Matcher is a Python-based tool that helps teams and project manag
 - **Weighted Ranking** — Scores candidates using a configurable blend of skill-match count (60 %) and years of experience (40 %).
 - **Availability Scheduling** — Computes free time slots within a working day (09:00–18:00) by merging booked meeting intervals from schedule data.
 - **Resume Parsing** — Extracts skills from uploaded PDF/DOCX résumés (powered by PyMuPDF and python-docx).
-- **AI Quiz Generator** *(Phase 6)* — Generates 5–10 MCQs based on the matched skills and job context using Groq's free LLM API. Scored instantly, with per-question feedback.
+- **AI Quiz Generator** — Generates 5–10 MCQs based on the matched skills and job context using Groq's free LLM API. Scored instantly, with per-question feedback.
 - **REST API** — FastAPI backend for programmatic access and integration with other systems.
 - **Interactive UI** — Streamlit front-end with tabs: Resume Upload → Matched Employees → Availability → Skill Quiz.
 - **Configurable** — All paths, weights, and defaults live in a single `settings.py`.
@@ -56,7 +56,9 @@ Smart_Resource_Matcher/
 │   └── main.py                   # CLI / Streamlit entry point
 ├── tests/                        # Pytest test suite
 │   └── test_quiz.py              # Mocked unit tests for Phase 6
-├── .env.example                  # Template: GROQ_API_KEY=
+│   └── test_matcher.py           # Mocked unit test for Matching sequence
+│   └── test_scheduler.py         # Mocked unit test for scheduling sequence
+├── .env                          # Template: GROQ_API_KEY
 ├── requirement.txt               # Python dependencies
 └── README.md
 ```
