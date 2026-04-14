@@ -7,4 +7,8 @@ task.md
 .env 
 .env.example
 .env.test
+
+
+#folders
 .venv/
+.vscode/
