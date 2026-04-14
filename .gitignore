@@ -1,8 +1,10 @@
 # Planning docs
 implementation_plan.md
+implementation_plan_p6.md
 task.md
 
 #Env
 .env 
 .env.example
 .env.test
+.venv/
