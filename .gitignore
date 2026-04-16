@@ -9,6 +9,11 @@ task.md
 .env.test
 
 
-#folders
+#IDE
 .venv/
 .vscode/
+.idea/
+
+# Cache
+__pycache__/
+*.pyc
