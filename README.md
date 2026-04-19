@@ -133,13 +133,13 @@ employee_id, date, start_time, end_time[, meeting_title]
 ### CLI
 
 ```bash
-python -m src.main
+python -m app
 ```
 
 ### Streamlit UI
 
 ```bash
-streamlit run src/main.py
+streamlit run app.py
 ```
 
 The UI has four tabs:

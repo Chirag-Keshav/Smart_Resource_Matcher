@@ -32,3 +32,15 @@ DEFAULT_SLOT_DURATION:  int = 60       # Free-slot size in minutes
 
 # ── Resume upload directory ───────────────────────────────────────────────────
 RESUME_DIR = PROJECT_ROOT / "resumes"
+
+# ── Quiz / Groq (Phase 6) ────────────────────────────────────────────────────
+import os
+from dotenv import load_dotenv
+
+load_dotenv(PROJECT_ROOT / ".env")
+
+GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "")
+GROQ_MODEL:   str = "llama-3.3-70b-versatile"
+QUIZ_MIN_Q:   int = 5
+QUIZ_MAX_Q:   int = 10
+

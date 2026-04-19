@@ -15,5 +15,6 @@ task.md
 .idea/
 
 # Cache
+.pytest_cache/
 __pycache__/
 *.pyc
