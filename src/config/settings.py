@@ -36,7 +36,8 @@ RESUME_DIR = PROJECT_ROOT / "resumes"
 # ── Quiz / Groq (Phase 6) ────────────────────────────────────────────────────
 import os
 from dotenv import load_dotenv
-
+# Set override=True so the .env file crushes the global ~/.zshrc variable
+load_dotenv(override=True)
 load_dotenv(PROJECT_ROOT / ".env")
 
 GROQ_API_KEY: str = os.getenv("GROQ_API_KEY", "")
